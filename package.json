@@ -1,0 +1,51 @@
+{
+  "name": "@chimer/nexus",
+  "version": "0.1.0",
+  "description": "Production-grade multi-agent orchestration engine with A2A protocol support, DAG workflows, circuit breakers, and live execution dashboards",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "nexus": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/cli.js",
+    "test": "node --test tests/**/*.test.js",
+    "lint": "tsc --noEmit"
+  },
+  "keywords": [
+    "ai-agents",
+    "multi-agent",
+    "orchestration",
+    "a2a-protocol",
+    "agent-swarm",
+    "dag-workflow",
+    "llm",
+    "circuit-breaker",
+    "fault-tolerance",
+    "agent-coordination",
+    "openai",
+    "anthropic",
+    "google-ai",
+    "ollama",
+    "model-context-protocol"
+  ],
+  "author": "chimer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chimer/nexus"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
